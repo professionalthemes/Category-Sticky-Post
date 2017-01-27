@@ -3,15 +3,15 @@
  * Category Sticky Post
  *
  * @package   Category_Sticky_Post
- * @author    Tom McFarlin <tom@tommcfarlin.com>
+ * @author    Professional Themes <support@professionalthemes.nyc>
  * @license   GPL-2.0+
- * @link      http://tommcfarlin.com/category-sticky-post/
- * @copyright 2013 - 2015 Tom McFarlin
+ * @link      https://wordpress.org/plugins/category-sticky-post/
+ * @copyright 2013 - 2017 Professional Themes
  */
 
 /**
  * @package Category_Sticky_Post
- * @author  Tom McFarlin <tom@tommcfarlin.com>
+ * @author  Professional Themes <support@professionalthemes.nyc>
  */
 
 class Category_Sticky_Post {
