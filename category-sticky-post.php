@@ -5,18 +5,18 @@
  * Mark a post to be placed at the top of a specified category archive. It's sticky posts specifically for categories.
  *
  * @package   Category_Sticky_post
- * @author    Tom McFarlin <tom@tommcfarlin.com>
+ * @author    Professional Themes <support@professionalthemes.nyc>
  * @license   GPL-2.0+
- * @link      http://tommcfarlin.com/category-sticky-post/
- * @copyright 2013 - 2016 Tom McFarlin
+ * @link      https://wordpress.org/plugins/category-sticky-post/
+ * @copyright 2013 - 2017 Professional Themes
  *
  * @wordpress-plugin
  * Plugin Name: Category Sticky Post
- * Plugin URI: 	https://tommcfarlin.com/category-sticky-post/
+ * Plugin URI: 	https://wordpress.org/plugins/category-sticky-post/
  * Description: Mark a post to be placed at the top of a specified category archive. It's sticky posts specifically for categories.
  * Version:     2.10.1
- * Author:      Tom McFarlin
- * Author URI:  https://tommcfarlin.com
+ * Author:      Professional Themes
+ * Author URI:  https://professionalthemes.nyc
  * Text Domain: category-sticky-post
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
