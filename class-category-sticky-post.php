@@ -134,8 +134,8 @@ class Category_Sticky_Post {
 		wp_nonce_field( plugin_basename( __FILE__ ), 'category_sticky_post_nonce' );
 
 		// Get the category dropdown and the checkbox for displaying the border
-		$html =  $this->get_categories_list( $post );
-		$html .= $this->get_border_checkbox( $post );
+		$html = '<p>' . $this->get_categories_list( $post ) . '</p>';
+		$html .= '<p>' . $this->get_border_checkbox( $post ) . '</p>';
 
 		echo $html;
 
@@ -383,22 +383,15 @@ class Category_Sticky_Post {
 	 * @since    2.0.0
 	 */
 	private function get_categories_list( $post ) {
+		$category_sticky_post = get_post_meta( $post->ID, 'category_sticky_post', true );
 
-		// First, read all the categories
-		$categories = get_categories();
-
-		// Build the HTML that will display the select box
-		$html = '<select id="category_sticky_post" name="category_sticky_post">';
-			$html .= '<option value="0">' . __( 'Select a category...', 'category-sticky-post' ) . '</option>';
-			foreach( $categories as $category ) {
-				$html .= '<option value="' . $category->cat_ID . '" ' . selected( get_post_meta( $post->ID, 'category_sticky_post', true ), $category->cat_ID, false ) . '>';
-					$html .= $category->cat_name;
-				$html .= '</option>';
-			}
-		$html .= '</select>';
-
-		return $html;
-
+		return wp_dropdown_categories( array(
+			'echo'             => false,
+			'id'               => 'category_sticky_post',
+			'name'             => 'category_sticky_post',
+			'show_option_none' => __( 'Select a category&hellip;', 'category-sticky-post' ),
+			'selected'         => $category_sticky_post,
+		) );
 	}
 
 	/**
