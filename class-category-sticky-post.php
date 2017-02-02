@@ -134,8 +134,8 @@ class Category_Sticky_Post {
 		wp_nonce_field( plugin_basename( __FILE__ ), 'category_sticky_post_nonce' );
 
 		// Get the category dropdown and the checkbox for displaying the border
-		$html =  $this->get_categories_list( $post );
-		$html .= $this->get_border_checkbox( $post );
+		$html = '<p>' . $this->get_categories_list( $post ) . '</p>';
+		$html .= '<p>' . $this->get_border_checkbox( $post ) . '</p>';
 
 		echo $html;
 
