@@ -389,7 +389,7 @@ class Category_Sticky_Post {
 			'echo'             => false,
 			'id'               => 'category_sticky_post',
 			'name'             => 'category_sticky_post',
-			'show_option_none' => __( 'Select a category...', 'category-sticky-post' ),
+			'show_option_none' => __( 'Select a category&hellip;', 'category-sticky-post' ),
 			'selected'         => $category_sticky_post,
 		) );
 	}
